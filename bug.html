@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly referencing an element with an id that's partially the same. 
+    document.getElementById("myDive").innerHTML = "This text replaces the original."; 
+  </script>
+</body>
+</html>
